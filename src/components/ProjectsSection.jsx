@@ -22,7 +22,7 @@ const projects = [
     overview: "Built an advanced AI-powered financial analysis tool that processes and summarizes 10-K reports using natural language processing. The system extracts key financial metrics, risk factors, and business insights from complex regulatory documents. Features include automated report parsing, sentiment analysis, and comprehensive financial dashboard generation for investment decision-making.",
     image: "/projects/project2.png",
     tags: ["AI/ML", "NLP", "Financial Analysis", "Python"],
-    demoUrl: "#",
+    demoUrl: "https://one0-k-reportscraper-2.onrender.com/",
     githubUrl: "https://github.com/karan6705/10-K-Report-Summarizer",
     date: "April 2025 – May 2025"
   },
@@ -33,7 +33,7 @@ const projects = [
     overview: "Developed a sophisticated web scraping tool with AI capabilities for intelligent data extraction and content analysis. The system uses machine learning algorithms to identify and extract relevant information from websites, providing automated research workflows with enhanced accuracy and efficiency. Features include intelligent content filtering, automated data validation, and comprehensive reporting capabilities.",
     image: "/projects/project3.png",
     tags: ["AI/ML", "Web Scraping", "Data Extraction", "Python"],
-    demoUrl: "#",
+    demoUrl: "https://ai-web-researcher.onrender.com",
     githubUrl: "https://github.com/karan6705/Web-Scraper-AI",
     date: "December 2024 – January 2025"
   },
@@ -170,10 +170,22 @@ export const ProjectsSection = () => {
                     <a
                       href={project.githubUrl}
                       target="_blank"
+                      rel="noopener noreferrer"
                       className="text-foreground/80 hover:text-primary transition-colors duration-300 hover:scale-110 transform"
                     >
                       <Github size={20} />
                     </a>
+                    {project.demoUrl && project.demoUrl !== "#" && (
+                      <a
+                        href={project.demoUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-foreground/80 hover:text-primary transition-colors duration-300 hover:scale-110 transform"
+                        title="Live Demo"
+                      >
+                        <ExternalLink size={20} />
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>
