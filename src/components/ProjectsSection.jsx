@@ -64,11 +64,22 @@ const projects = [
     id: 8,
     title: "TweetSentiment Analyzer",
     description: "End-to-end sentiment classification pipeline for tweets using NLTK, scikit-learn, and Logistic Regression.",
-    overview: "Created an end‑to‑end sentiment‑classification pipeline for tweets. After cleaning raw data by stripping handles, URLs, and non‑alphanumeric characters, I tokenized and stemmed text with NLTK, vectorized it into a 1,000‑feature bag‑of‑words model using scikit‑learn’s CountVectorizer, and trained a Logistic Regression classifier that achieved 95 % accuracy and a 0.72 ROC‑AUC. The model and vectorizer are saved as joblib artifacts, with helper functions for real‑time prediction on new tweets.",
+    overview: "Created an end‑to‑end sentiment‑classification pipeline for tweets. After cleaning raw data by stripping handles, URLs, and non‑alphanumeric characters, I tokenized and stemmed text with NLTK, vectorized it into a 1,000‑feature bag‑of‑words model using scikit‑learn's CountVectorizer, and trained a Logistic Regression classifier that achieved 95 % accuracy and a 0.72 ROC‑AUC. The model and vectorizer are saved as joblib artifacts, with helper functions for real‑time prediction on new tweets.",
     image: "/projects/project6.png",
     tags: ["Python", "pandas", "NLTK", "scikit-learn", "LogisticRegression", "joblib"],
     demoUrl: "#",
     githubUrl: "https://github.com/karan6705/Twitter-Sentiment-Analysis",
+    date: "2025"
+  },
+  {
+    id: 9,
+    title: "SJSU Exam Scheduler",
+    description: "Full-stack exam scheduling system serving 1,000+ students with Spring Boot backend, ReactJS frontend, and multi-platform deployment.",
+    overview: "Engineered a full‑stack Spring Boot backend with PostgreSQL for CRUD exam management and a ReactJS frontend, dockerized for consistency and deployed on Heroku, Vercel & Supabase to serve 1,000+ students and reduce manual calendar setup by 80 %.",
+    image: "/projects/project7.png",
+    tags: ["Spring Boot", "ReactJS", "PostgreSQL", "Docker", "Heroku", "Vercel", "Supabase"],
+    demoUrl: "https://final-scheduler.vercel.app",
+    githubUrl: "https://github.com/karan6705/SJSU-Exams-Scheduler",
     date: "2025"
   },
 ];
